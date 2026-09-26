@@ -9,7 +9,10 @@ body, * {
 h1 {
     margin: 1rem;
 }
+p {
+    margin-bottom: 10px;
 
+}
 .cards {
     display: flex;
     align-items: center;

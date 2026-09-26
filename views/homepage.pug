@@ -1,0 +1,16 @@
+doctype html
+html 
+    head 
+        title= title
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Custom Objects Overview (Books)
+        a(href="/update-cobj" style="margin: 1rem; display: inline-block;") Add to this table
+        
+        .cards
+            each item in data
+                .card
+                    h2(class="card__name") #{item.properties.name || 'N/A'}
+                    p(class="card__email") Author: #{item.properties.author || 'N/A'}
+                    p Description: #{item.properties.description || 'N/A'}
